@@ -1,0 +1,174 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+  scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aquamarine;
+    text-shadow: -4px 4px black
+}
+html {
+  scroll-padding-top: 80px;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    background-color: #21062b;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    color: #d5660f; 
+
+    .icon {
+        float: left;
+        margin:0 5px 5px 20px;
+        height: 80px;
+        width: 50px;
+    }
+    #navbar {
+        float:right;
+        width: 30vw;
+        height: 80px;
+        margin-right: 40px;
+        
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly; */
+            align-items: center; 
+            list-style-type: none;
+            margin-top: 20px;
+            font-size: 2rem;
+            font-family: "Jersey 20", sans-serif;
+        }
+        
+        a {
+            color: #d5660f;
+            text-decoration: none;
+            text-shadow: 4px 4px black
+        }
+
+        a:hover{
+            color: aquamarine;
+            text-shadow: 4px 4px black 
+        }
+    }
+}
+
+
+
+ main {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+} 
+
+#welcome-section {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    background-image: url(https://www.ronins.co.uk/wp-content/uploads/2024/01/is-web-development-dying.jpg);
+    background-size: 100% 100vh;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xxx-large;
+    color: aquamarine;
+    text-shadow: -4px 4px  black /* #d36712 */ ;
+}
+
+#projects {
+    display: flow-root;
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #37054a, #4645af);
+    
+    h2{
+        font-size: xxx-large;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+
+    .project-tile{
+        border: 1px solid #21062b;
+        width: 40%;
+        height: 40%;
+        border-radius: 10px;
+        box-shadow: -4px 4px 4px #21062b;
+        background-color: #37054a;
+        
+
+        img{
+            max-width: 100%;
+            max-height: 60%;          
+            object-fit: contain;
+            border-radius: 10px 10px 0 0;
+        }
+
+        a {
+            font-size: 1.8rem;
+            background-color: #21062b;
+            text-decoration: none; 
+        }
+
+        a:hover{
+            color: #d5660f;
+        }
+    }   
+}
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: auto;
+    background: linear-gradient(to bottom, #4645af, #37054a);
+    padding-bottom: 10%;
+    
+    h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
+    .social-icons {
+        display: inline-flex;
+        font-size: 2.5rem;
+        gap: 2rem
+        
+    }
+}
+
+footer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21062b;
+    color: white;
+    width: 100vw;
+    height: 80px;
+    font-size: 1.5rem;
+}
