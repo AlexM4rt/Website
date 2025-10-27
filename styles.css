@@ -68,7 +68,7 @@ header {
 
 
  main {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     width: 100%;
     height: auto;
 } 
@@ -89,6 +89,9 @@ header {
     font-size: xxx-large;
     color: aquamarine;
     text-shadow: -4px 4px  black /* #d36712 */ ;
+    
+    padding-top: 80px;
+    box-sizing: border-box;
 }
 
 #projects {
@@ -197,4 +200,91 @@ footer {
 #game-project p {
     font-size: 1.8rem;
    
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  
+  html {
+    scroll-padding-top: 140px;
+  }
+  
+  header {
+    height: auto;
+
+    #navbar {
+      float: none;
+      width: 100%;
+      margin: 0;
+      height: auto;
+
+      ul {
+        justify-content: center;
+        margin-top: 0;
+        padding-bottom: 10px;
+        gap: 15px;
+      }
+    }
+  }
+
+  #welcome-section {
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  html {
+    scroll-padding-top: 140px; 
+  }
+
+  header {
+    height: auto;
+    padding: 10px 0;
+
+    .icon {
+      display: none;
+    }
+
+    #navbar {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      height: auto;
+
+      ul {
+        margin: 0;
+        padding: 5px 0;
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 1.7rem;
+        gap: 15px; 
+        justify-content: center;
+      }
+    }
+  }
+
+  #welcome-section {
+    padding-top: 140px;
+  }
+
+  #projects {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; 
+
+    .project-tile {
+      width: 90%;
+      height: auto; 
+    }
+  }
+
+  #game-project {
+    iframe {
+      height: 350px;
+    }
+  }
 }
